@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#171613">
+    <meta name="description" content="Каталог одягу LEO GOLD">
+    <title>LEO GOLD — каталог одягу</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header"><a class="brand" href="index.html">LEO <span>GOLD</span></a>
+        <nav><a href="#seasons">Колекції</a><a href="#catalog">Каталог</a></nav><a class="insta-link"
+            href="https://instagram.com/leo_gold" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a>
+    </header>
+    <main>
+        <section class="hero">
+            <p class="eyebrow">ОДЯГ, ЯКИЙ ГОВОРИТЬ ЗА ТЕБЕ</p>
+            <h1>Більше, ніж<br><em>просто одяг.</em></h1>
+            <p class="hero-copy">Відкрий свою колекцію LEO GOLD</p><a class="text-link" href="#seasons">ВІДКРИТИ КАТАЛОГ
+                <span>↘</span></a>
+            <div class="hero-mark">LG<span>®</span></div>
+        </section>
+        <section id="seasons" class="season-section section-wrap">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">ОБИРАЙ СВІЙ СЕЗОН</p>
+                    <h2>Колекції <em>за сезоном</em></h2>
+                </div>
+                <p class="heading-note">Чотири настрої. Твій стиль.</p>
+            </div>
+            <div class="season-grid">
+                <a class="season-card spring" href="#catalog" data-filter-season="весна">
+                    <div class="season-content"><span>01 / LIGHTNESS</span>
+                        <h3>Весна</h3>
+                        <p>Легкість у кожній деталі</p><b>ДИВИТИСЯ КОЛЕКЦІЮ ↗</b>
+                    </div>
+                </a>
+                <a class="season-card summer" href="#catalog" data-filter-season="літо">
+                    <div class="season-content"><span>02 / FREEDOM</span>
+                        <h3>Літо</h3>
+                        <p>Свобода бути собою</p><b>ДИВИТИСЯ КОЛЕКЦІЮ ↗</b>
+                    </div>
+                </a>
+                <a class="season-card autumn" href="#catalog" data-filter-season="осінь">
+                    <div class="season-content"><span>03 / WARMTH</span>
+                        <h3>Осінь</h3>
+                        <p>Тепло у кожному образі</p><b>ДИВИТИСЯ КОЛЕКЦІЮ ↗</b>
+                    </div>
+                </a>
+                <a class="season-card winter" href="#catalog" data-filter-season="зима">
+                    <div class="season-content"><span>04 / COMFORT</span>
+                        <h3>Зима</h3>
+                        <p>Стиль, що зігріває</p><b>ДИВИТИСЯ КОЛЕКЦІЮ ↗</b>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="catalog" class="catalog-section section-wrap">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">LEO GOLD / SELECTION</p>
+                    <h2>Обрані <em>моделі</em></h2>
+                </div>
+                <div class="filter-row" id="filters"><button class="filter active" data-season="усі">Усі
+                        товари</button><button class="filter" data-season="весна">Весна</button><button class="filter"
+                        data-season="літо">Літо</button><button class="filter" data-season="осінь">Осінь</button><button
+                        class="filter" data-season="зима">Зима</button></div>
+            </div>
+            <div id="catalog-grid" class="product-grid" aria-live="polite"></div>
+            <p id="empty-state" class="empty-state" hidden>У цій колекції поки немає товарів.</p>
+        </section>
+        <section class="contact-band">
+            <p class="eyebrow">Є ПИТАННЯ ЩОДО МОДЕЛІ?</p>
+            <h2>Ми допоможемо <em>обрати своє.</em></h2><a href="https://instagram.com/leo_gold" target="_blank"
+                rel="noreferrer" class="gold-button">НАПИСАТИ В INSTAGRAM ↗</a>
+        </section>
+    </main>
+    <footer class="site-footer"><a class="brand" href="index.html">LEO <span>GOLD</span></a>
+        <p>Більше, ніж просто одяг</p><small>© <span id="year"></span> LEO GOLD. Усі права захищено.</small>
+    </footer>
+    <script src="products.js?v=3"></script>
+    <script src="app.js?v=3"></script>
+</body>
+
+</html>
